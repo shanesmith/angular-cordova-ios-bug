@@ -1,0 +1,25 @@
+<!--
+  Easiest way to reproduce is with the input event of a text box since you
+  can mash on the keyboard.
+-->
+<input type="text" placeholder="input" (input)="onInput($event)" />
+
+<!--
+  While not as easy to reproduce, it's still possible to see the issue with
+  the click event if the handler updates the bound value.
+-->
+<button type="button" (click)="onButton()">BUTTON</button>
+
+<!-- 
+  The value that is being updated by the event handler needs to be bound in the
+  template.
+-->
+<p>Value: {{value}}</p>
+
+
+<!--
+  An input property on the child component is not required to reproduce the
+  issue, this is just a way to have the <img /> reload within it.
+-->
+<child [thing]="thing"></child>
+

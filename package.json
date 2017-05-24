@@ -1,0 +1,36 @@
+{
+  "name": "stucked",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "emulate": "npm run build && cordova emulate",
+    "device": "npm run build && cordova device"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "4.1.0",
+    "@angular/compiler": "4.1.0",
+    "@angular/core": "4.1.0",
+    "@angular/router": "4.1.0",
+    "@angular/platform-browser": "4.1.0",
+    "@angular/platform-browser-dynamic": "4.1.0",
+    "core-js": "2.4.1",
+    "rxjs": "5.1.1",
+    "zone.js": "0.8.10"
+  },
+  "devDependencies": {
+    "@angular/cli": "1.0.4",
+    "@angular/compiler-cli": "4.1.0",
+    "@types/node": "6.0.60",
+    "ts-node": "2.0.0",
+    "cordova": "6.5.0",
+    "typescript": "2.2.2"
+  },
+  "optionalDependencies": {
+    "ios-deploy": "1.9.1",
+    "ios-sim": "5.0.13"
+  }
+}
